@@ -1,0 +1,482 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(33, 37, 59);
+    font-family: Arial, sans-serif;
+    padding-top: 60px;
+}
+
+section {
+    min-height: 100vh;
+    padding: 160px 32px;
+}
+
+/* Header Styling */
+.header {
+    background-color: rgb(33, 37, 59);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 20px 40px;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    padding: 8px 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: darkcyan;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+/* Home Content Styles */
+.home-content h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 32px;
+}
+
+span {
+    color: rgb(56, 115, 9);
+}
+
+.home-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: darkcyan;
+}
+
+/* Image Styling */
+.home-img img {
+    width: 370px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Paragraph Styling */
+.home-content p {
+    font-size: 18px;
+    color: white;
+    padding-right: 20px;
+}
+
+/* Social Media Icon Styling */
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid darkcyan;
+    border-radius: 50%;
+    font-size: 32px;
+    color: #3498db;
+    margin: 48px 24px 48px 0;
+    transition: 0.5s ease;
+}
+
+.social-media a:hover {
+    background: #3498db;
+    color: #fff;
+    box-shadow: 0 0 16px #3498db;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 16px 32px;
+    background-color: #3498db;
+    border-radius: 40px;
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33, 37, 59);
+    color: white;
+    padding: 100px 20px;
+}
+
+.about-content{
+    max-width:800px;
+    padding: 20px;
+}
+
+.about h2{
+    font-size: 36px;
+    color: darkcyan;
+    margin-bottom: 20px;
+    
+}
+
+.about p{
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.skills{
+    margin-top: 40px;
+}
+
+.skills h3{
+    font-size: 28px;
+    color: darkcyan;
+    margin-bottom: 20px;
+}
+
+.skill-category {
+    margin-bottom: 24px;
+}
+
+.skill-category h4 {
+    font-size: 20px;
+    color: #e0e0e0;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    border-bottom: 2px solid darkcyan;
+    padding-bottom: 8px;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #f0f0f0;
+}
+
+/* Button Styling */
+.about .btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: darkcyan;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 4rem;
+    transition: 0.3s ease;
+    text-decoration: none;
+   
+   
+}
+
+.btn:hover {
+    background-color: darkcyan;
+    color: #fff;
+}
+
+/* About Image Styling */
+.about-img {
+    margin-right: 40px;
+}
+
+.about-img img {
+    width: 380px;
+    height: auto;
+    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Projects Section Styling */
+.projects {
+    padding: 80px 20px;
+    background-color: rgb(33, 37, 59);
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    color: darkcyan;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* Project Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Project Card */
+.project-card {
+    background-color: #2a2a40;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Image */
+.project-img {
+    width: 100%;
+    height: 380px;
+   
+}
+
+/* Project Info */
+.project-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.project-title {
+    font-size: 24px;
+    color: darkcyan;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 18px;
+    color: darkcyan;
+    margin-bottom: 20px;
+}
+
+/* Project Links */
+.project-links {
+    display: flex;
+    justify-content: center; /* Center-aligns the Source Code button */
+}
+
+/* Source Code Button */
+.btn-source {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 16px;
+    background-color: rgb(56, 115, 9);
+    border-radius: 6px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-source:hover {
+    background-color: rgb(86, 115, 115);
+}
+
+.project-links i {
+    margin-right: 8px;
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 80px 20px;
+    background-color: rgb(33, 37, 59);
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    color: darkcyan;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+.btn-submit {
+    padding: 12px 24px;
+    background-color: darkcyan;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #1f7dc6;
+}
+
+/* Social Media Section */
+.contact-social {
+    margin-top: 40px;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.social-icon {
+    color: darkcyan;
+    font-size: 28px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #1f7dc6;
+}
+
+/* Footer Section */
+.footer {
+    background-color: rgb(33, 37, 59);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: darkcyan;
+}
+
+/* Social Media Links */
+.footer-social a {
+    color: darkcyan;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #1f7dc6;
+}
+
+/* Copyright Section */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
